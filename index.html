@@ -1,17 +1,74 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="javascript" href="script.js" />
     <title>Scorecard</title>
   </head>
   <body>
     <div id="container">
       <div id="card-bg">
-        <h3></h3>
+        <div class="team-section">
+          <div class="team-div">
+            <div id="team-logo-div">
+              <img
+                class="logo"
+                src="./assets/man-utd.svg"
+                alt="logo of man-utd"
+              />
+            </div>
+            <h2 class="team-name">Man Utd</h2>
+          </div>
+          <div class="match-details">
+            <h2 class="cup">EPL</h2>
+            <p class="date">Aug 12th 2025</p>
+            <p class="time">1:30pm</p>
+          </div>
+          <div class="team-div">
+            <div id="team-logo-div">
+              <img
+                class="logo"
+                src="./assets/Liverpool.svg"
+                alt="logo of man-utd"
+              />
+            </div>
+            <h2 class="team-name">Liverpool</h2>
+          </div>
+        </div>
+        <div class="score-section-container">
+          <div class="home-score-div">
+            <h2 id="homescore">0</h2>
+          </div>
+          <div class="result-info-div">
+            <h2 id="result-info">Lets Go!</h2>
+          </div>
+          <div class="away-score-div">
+            <h2 id="awayscore">0</h2>
+          </div>
+        </div>
       </div>
+      <div class="calc-container">
+        <div class="score-btn-div">
+          <button type="button" onclick="scoreBtnOne()">+1</button>
+          <button type="button" onclick="scoreBtnTwo()">+2</button>
+          <button type="button" onclick="scoreBtnThree()">+3</button>
+        </div>
+        <div>
+          <button class="resetbutton" type="button" onclick="resetBtn()">
+            Reset Game
+          </button>
+        </div>
+        <div class="score-btn-div">
+          <button type="button" onclick="scoreBtnFour()">+1</button>
+          <button type="button" onclick="scoreBtnFive()">+2</button>
+          <button type="button" onclick="scoreBtnSix()">+3</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
